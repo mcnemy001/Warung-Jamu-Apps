@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutTransaksi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textEmptyTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Belum ada transaksi"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textTotalBiaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Biaya Akhir: Rp0"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/buttonTambahTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Transaksi"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>
